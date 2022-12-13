@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		67F32D442948F21B0043A4FF /* BabyFacesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F32D432948F21B0043A4FF /* BabyFacesApp.swift */; };
-		67F32D462948F21B0043A4FF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F32D452948F21B0043A4FF /* ContentView.swift */; };
+		67F32D462948F21B0043A4FF /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F32D452948F21B0043A4FF /* MainView.swift */; };
 		67F32D482948F21D0043A4FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67F32D472948F21D0043A4FF /* Assets.xcassets */; };
 		67F32D4B2948F21D0043A4FF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67F32D4A2948F21D0043A4FF /* Preview Assets.xcassets */; };
 		67F32D552948F21D0043A4FF /* BabyFacesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F32D542948F21D0043A4FF /* BabyFacesTests.swift */; };
 		67F32D5F2948F21D0043A4FF /* BabyFacesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F32D5E2948F21D0043A4FF /* BabyFacesUITests.swift */; };
 		67F32D612948F21D0043A4FF /* BabyFacesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F32D602948F21D0043A4FF /* BabyFacesUITestsLaunchTests.swift */; };
+		67F32D6F2948F6A50043A4FF /* BabyPicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F32D6E2948F6A50043A4FF /* BabyPicture.swift */; };
+		67F32D712948F7EA0043A4FF /* BabyPictureList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F32D702948F7EA0043A4FF /* BabyPictureList.swift */; };
+		67F32D732948F8A70043A4FF /* BabyEmotions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F32D722948F8A70043A4FF /* BabyEmotions.swift */; };
+		67F32D752949103C0043A4FF /* TextAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F32D742949103C0043A4FF /* TextAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +40,7 @@
 /* Begin PBXFileReference section */
 		67F32D402948F21B0043A4FF /* BabyFaces.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BabyFaces.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67F32D432948F21B0043A4FF /* BabyFacesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyFacesApp.swift; sourceTree = "<group>"; };
-		67F32D452948F21B0043A4FF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		67F32D452948F21B0043A4FF /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		67F32D472948F21D0043A4FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67F32D4A2948F21D0043A4FF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		67F32D502948F21D0043A4FF /* BabyFacesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BabyFacesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +48,10 @@
 		67F32D5A2948F21D0043A4FF /* BabyFacesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BabyFacesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		67F32D5E2948F21D0043A4FF /* BabyFacesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyFacesUITests.swift; sourceTree = "<group>"; };
 		67F32D602948F21D0043A4FF /* BabyFacesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyFacesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		67F32D6E2948F6A50043A4FF /* BabyPicture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyPicture.swift; sourceTree = "<group>"; };
+		67F32D702948F7EA0043A4FF /* BabyPictureList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyPictureList.swift; sourceTree = "<group>"; };
+		67F32D722948F8A70043A4FF /* BabyEmotions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyEmotions.swift; sourceTree = "<group>"; };
+		67F32D742949103C0043A4FF /* TextAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +102,9 @@
 		67F32D422948F21B0043A4FF /* BabyFaces */ = {
 			isa = PBXGroup;
 			children = (
+				67F32D6D2948F68D0043A4FF /* Model */,
 				67F32D432948F21B0043A4FF /* BabyFacesApp.swift */,
-				67F32D452948F21B0043A4FF /* ContentView.swift */,
+				67F32D452948F21B0043A4FF /* MainView.swift */,
 				67F32D472948F21D0043A4FF /* Assets.xcassets */,
 				67F32D492948F21D0043A4FF /* Preview Content */,
 			);
@@ -125,6 +134,17 @@
 				67F32D602948F21D0043A4FF /* BabyFacesUITestsLaunchTests.swift */,
 			);
 			path = BabyFacesUITests;
+			sourceTree = "<group>";
+		};
+		67F32D6D2948F68D0043A4FF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				67F32D6E2948F6A50043A4FF /* BabyPicture.swift */,
+				67F32D702948F7EA0043A4FF /* BabyPictureList.swift */,
+				67F32D722948F8A70043A4FF /* BabyEmotions.swift */,
+				67F32D742949103C0043A4FF /* TextAnimation.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +277,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67F32D462948F21B0043A4FF /* ContentView.swift in Sources */,
+				67F32D462948F21B0043A4FF /* MainView.swift in Sources */,
+				67F32D752949103C0043A4FF /* TextAnimation.swift in Sources */,
 				67F32D442948F21B0043A4FF /* BabyFacesApp.swift in Sources */,
+				67F32D712948F7EA0043A4FF /* BabyPictureList.swift in Sources */,
+				67F32D732948F8A70043A4FF /* BabyEmotions.swift in Sources */,
+				67F32D6F2948F6A50043A4FF /* BabyPicture.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

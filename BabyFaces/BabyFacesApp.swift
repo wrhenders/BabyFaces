@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct BabyFacesApp: App {
+    @State var allPictures: BabyPictureList = BabyPictureList()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView(pictureList: $allPictures)
         }
     }
 }
