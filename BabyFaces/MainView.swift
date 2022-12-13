@@ -11,13 +11,6 @@ struct MainView: View {
     @Binding var pictureList: BabyPictureList
     @State private var animate = false
     
-//    @State private var degrees = 0.0
-//    func animateText() {
-//        let baseAnimation = Animation.easeInOut(duration: 3)
-//        withAnimation(baseAnimation) {
-//            self.degrees += 360
-//        }
-//    }
     
     var body: some View {
         GeometryReader {proxy in
