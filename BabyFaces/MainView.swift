@@ -9,8 +9,6 @@ import SwiftUI
 
 struct MainView: View {
     @Binding var pictureList: BabyPictureList
-    @State private var animate = false
-    
     
     var body: some View {
         GeometryReader {proxy in
