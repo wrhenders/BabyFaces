@@ -14,20 +14,27 @@ enum BabyEmotion: String {
     case silly
     case sleepy
     case surprised
+    case excited
+    case upset
+    case ecstatic
+    case joyful
+    case relaxed
+    case delighted
+    case curious
     
     var color: Color {
         switch self {
-        case .angry:
+        case .angry, .upset:
             return Color.red
-        case .happy:
+        case .happy, .joyful, .delighted, .ecstatic:
             return Color.green
         case .sad:
             return Color.blue
-        case .silly:
+        case .silly, .excited:
             return Color.cyan
-        case .sleepy:
+        case .sleepy, .relaxed:
             return Color.indigo
-        case .surprised:
+        case .surprised, .curious:
             return Color.mint
         }
     }

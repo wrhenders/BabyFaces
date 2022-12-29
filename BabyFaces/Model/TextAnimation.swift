@@ -20,12 +20,17 @@ struct TextEffect: GeometryEffect {
     }
 }
 
+struct UniqueChar: Identifiable {
+    let id = UUID()
+    let char: Character
+}
+
 struct AnimatedText: View {
-    var text: String
+    var charArray: [UniqueChar] = []
     @State var animate = false
     
     init(_ text: String) {
-        self.text = text
+        self.charArray = Array(text).map {UniqueChar(char: $0)}
     }
     
     func random() -> CGFloat {
@@ -34,8 +39,8 @@ struct AnimatedText: View {
     
     var body: some View {
         HStack(spacing:1) {
-            ForEach(Array(text), id: \.self) { char in
-                Text(String(char))
+            ForEach(charArray, id: \.self.id) { uniqueChar in
+                Text(String(uniqueChar.char))
                     .font(.largeTitle )
                     .fontWeight(.bold)
                     .modifier(TextEffect(x: animate ? random() : -random()).ignoredByLayout())
