@@ -9,13 +9,16 @@ import SwiftUI
 
 struct MainView: View {
     @Binding var pictureList: BabyPictureList
-    
+        
     var body: some View {
         GeometryReader {proxy in
             ZStack {
                 Image(pictureList.currentPicture.img)
                     .resizable()
                     .aspectRatio(contentMode: .fill)
+                SettingsGear()
+                    .frame(width: proxy.size.width - 60, alignment: .trailing)
+                    .frame(height: proxy.size.height, alignment: .top)
                 AnimatedText(pictureList.currentPicture.emotion.title)
                     .foregroundColor(pictureList.currentPicture.emotion.color)
                     .frame(maxHeight: .infinity, alignment: .bottom)
