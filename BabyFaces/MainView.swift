@@ -40,16 +40,8 @@ struct MainView: View {
             .edgesIgnoringSafeArea(.all)
         }
         .sheet(isPresented: $isPresentingSettings) {
-            NavigationView {
-                SettingsView(settings: $settings)
-                    .toolbar {
-                        ToolbarItem(placement: .confirmationAction) {
-                            Button("Done") {
-                                isPresentingSettings = false
-                            }
-                        }
-                    }
-            }
+            SettingsView(settings: $settings)
+            .presentationDetents([.fraction(1/3)])
         }
     }
 }

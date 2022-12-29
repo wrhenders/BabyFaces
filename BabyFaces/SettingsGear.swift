@@ -13,18 +13,18 @@ struct SettingsGear: View {
     
     var body: some View {
         ZStack{
-            Circle()
-                .trim(from: press ? 0.001 : 1, to: 1)
-                .stroke(style: StrokeStyle(lineWidth: 2, lineCap: .round))
-                .foregroundColor(.white)
-                .rotationEffect(Angle(degrees: 90))
-                .rotation3DEffect(Angle(degrees: 180), axis: (x: 1, y: 0, z: 0))
             Image(systemName: "gearshape.fill")
                 .resizable()
                 .foregroundColor(.white)
                 .frame(width:30, height: 30)
+            Circle()
+                .trim(from: press ? 0.001 : 1, to: 1)
+                .stroke(style: StrokeStyle(lineWidth: 4, lineCap: .round))
+                .foregroundColor(.white)
+                .rotationEffect(Angle(degrees: 90))
+                .rotation3DEffect(Angle(degrees: 180), axis: (x: 1, y: 0, z: 0))
         }
-        .animation(.easeOut(duration: 2), value: press)
+        .animation(.easeInOut(duration: 2), value: press)
         .frame(width: 40, height: 40)
         .gesture(
             LongPressGesture(minimumDuration: 2)
