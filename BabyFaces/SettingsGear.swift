@@ -24,10 +24,10 @@ struct SettingsGear: View {
                 .foregroundColor(.white)
                 .frame(width:30, height: 30)
         }
-        .animation(.easeOut, value: press)
+        .animation(.easeOut(duration: 2), value: press)
         .frame(width: 40, height: 40)
         .gesture(
-            LongPressGesture()
+            LongPressGesture(minimumDuration: 2)
                 .updating($press) { currentState, gestureState, transaction in
                     gestureState = currentState
                 }

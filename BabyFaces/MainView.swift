@@ -9,15 +9,18 @@ import SwiftUI
 
 struct MainView: View {
     @Binding var pictureList: BabyPictureList
-        
+    
+    @State var settings = SettingsModel()
+    @State private var isPresentingSettings = false
+    
     var body: some View {
         GeometryReader {proxy in
             ZStack {
                 Image(pictureList.currentPicture.img)
                     .resizable()
                     .aspectRatio(contentMode: .fill)
-                SettingsGear()
-                    .frame(width: proxy.size.width - 60, alignment: .trailing)
+                SettingsGear(clickAction: {isPresentingSettings = true})
+                    .frame(width: proxy.size.width - 75, alignment: .trailing)
                     .frame(height: proxy.size.height, alignment: .top)
                 AnimatedText(pictureList.currentPicture.emotion.title)
                     .foregroundColor(pictureList.currentPicture.emotion.color)
@@ -35,6 +38,18 @@ struct MainView: View {
                 }
             }
             .edgesIgnoringSafeArea(.all)
+        }
+        .sheet(isPresented: $isPresentingSettings) {
+            NavigationView {
+                SettingsView(settings: $settings)
+                    .toolbar {
+                        ToolbarItem(placement: .confirmationAction) {
+                            Button("Done") {
+                                isPresentingSettings = false
+                            }
+                        }
+                    }
+            }
         }
     }
 }

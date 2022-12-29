@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6793CAC1295DDE5400CB395F /* SettingsGear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6793CAC0295DDE5400CB395F /* SettingsGear.swift */; };
+		6793CAC3295DE8C400CB395F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6793CAC2295DE8C400CB395F /* SettingsView.swift */; };
+		6793CAC5295DE8F700CB395F /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6793CAC4295DE8F700CB395F /* SettingsModel.swift */; };
 		67F32D442948F21B0043A4FF /* BabyFacesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F32D432948F21B0043A4FF /* BabyFacesApp.swift */; };
 		67F32D462948F21B0043A4FF /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F32D452948F21B0043A4FF /* MainView.swift */; };
 		67F32D482948F21D0043A4FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67F32D472948F21D0043A4FF /* Assets.xcassets */; };
@@ -40,6 +42,8 @@
 
 /* Begin PBXFileReference section */
 		6793CAC0295DDE5400CB395F /* SettingsGear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsGear.swift; sourceTree = "<group>"; };
+		6793CAC2295DE8C400CB395F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		6793CAC4295DE8F700CB395F /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
 		67F32D402948F21B0043A4FF /* BabyFaces.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BabyFaces.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67F32D432948F21B0043A4FF /* BabyFacesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyFacesApp.swift; sourceTree = "<group>"; };
 		67F32D452948F21B0043A4FF /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -110,6 +114,7 @@
 				67F32D472948F21D0043A4FF /* Assets.xcassets */,
 				67F32D492948F21D0043A4FF /* Preview Content */,
 				6793CAC0295DDE5400CB395F /* SettingsGear.swift */,
+				6793CAC2295DE8C400CB395F /* SettingsView.swift */,
 			);
 			path = BabyFaces;
 			sourceTree = "<group>";
@@ -146,6 +151,7 @@
 				67F32D702948F7EA0043A4FF /* BabyPictureList.swift */,
 				67F32D722948F8A70043A4FF /* BabyEmotions.swift */,
 				67F32D742949103C0043A4FF /* TextAnimation.swift */,
+				6793CAC4295DE8F700CB395F /* SettingsModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -280,7 +286,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6793CAC5295DE8F700CB395F /* SettingsModel.swift in Sources */,
 				67F32D462948F21B0043A4FF /* MainView.swift in Sources */,
+				6793CAC3295DE8C400CB395F /* SettingsView.swift in Sources */,
 				6793CAC1295DDE5400CB395F /* SettingsGear.swift in Sources */,
 				67F32D752949103C0043A4FF /* TextAnimation.swift in Sources */,
 				67F32D442948F21B0043A4FF /* BabyFacesApp.swift in Sources */,
